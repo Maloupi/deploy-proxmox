@@ -16,6 +16,7 @@ alias gzzba='for b in `git branch -r | grep -v -- "->"`; do git branch --track $
 alias nbfiles='find . -maxdepth 1 -type d -exec /bin/bash -c "echo -e '\''{}>\c'\'' ; ls -1R '\''{}'\'' |grep -v '\''./'\'' |wc -l " \; |sort -n -k 2 -t '\''>'\'' '
 alias spacemonger='du -m -d 0 * | sort -n'
 alias sshg='ssh -A -o SendEnv="GIT*"'
+alias ssh-start-agent='eval "$(ssh-agent -s)"'
 alias zdu='du -m -d 0 *'
 alias zdocker_ls_all='docker container ls -a'
 alias zdocker_prune_all='docker system prune -a -f --volumes'
